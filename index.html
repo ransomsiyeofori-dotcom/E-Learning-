@@ -1,0 +1,465 @@
+<!doctype.html>
+   <html lang="en">
+    <head><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400..700&family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+
+body { margin: 0px;
+       background: black;}
+ 
+ /* Header Section */
+
+ header{ background: purple;
+         position: fixed;
+         left: 0px; top: 0px;
+         height: 80px;
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         box-shadow: 0 0 15px gray;
+         z-index: 999;
+ }
+
+#search-icon { font-size: 40px;
+               color: #ADEBB3;}
+
+#menu { font-size: 40px;
+               color:#ADEBB3 ;}
+
+.search { height: 30px;
+          border-radius: 15px;
+          outline: none;
+          border-style: none;}
+          
+.search:focus { border: 2px solid purple;}
+
+/* Navigation Section */
+
+nav { height: 100vh;
+      width: 80%;
+      position: fixed;
+      right: 0px; top: 80px;
+      box-shadow: 0 0 15px gray;
+      background: purple;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 10px;
+      gap: 20px;
+      z-index: 1;
+      transform: translateX(100%);
+      box-shadow: 0 0 15px gray;
+      transition: transform 0.9s ease;}
+
+nav.active { transform: translateX(0%);}
+      
+
+.btn { height: 40px;
+       border-style: none;
+       background: transparent;
+       color: #ADEBB3;
+       font-size: 20px;
+       cursor: pointer;}
+
+
+.btn:hover { background: coral;
+             transform: scale(1.09);
+             transition: transform 0.9s ease;}
+
+.login-section { display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 gap: 20px;
+                 width: 100%;
+                height: 200px;}
+                
+
+.btn1 { height: 50px;
+        width: 250px;
+        border-radius: 15px;
+        background: coral;
+        color: white;
+        border-style: none;
+        cursor: pointer;}
+
+.btn1:hover { background: orange;
+              transform: scale(1.09);
+              transition: transform 0.9s ease;
+                box-shadow: 0 0 15px orange;}
+                
+                
+/* Main-Section */
+
+main { margin-top: 80px;
+       height: 2500px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       line-height: 1.6;}
+
+.green { color: green;}
+.red{ color: red;}
+.purple{ color: purple;}
+.learning-hub { color: white;}
+
+.slogan { font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  text-align: center;}
+  
+p { color: white;}
+h3 { color: white;}
+
+/* slider-section*/
+
+.slider { position: relative;
+          width: 100%;
+          height: 500px;
+          overflow: hidden;}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  text-align: center;}
+  
+  
+.card img { 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;}
+  
+.card.active {
+  opacity: 1;}
+  
+/* TEXT ANIMATION */
+.text {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s;
+}
+
+.card.active .text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* BUTTONS */
+#prev, #next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* DOTS */
+.dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots .active {
+  background: white;
+}
+
+
+#prev { left: 10px; }
+#next { right: 10px; }
+
+.hero { display: flex;
+        flex-direction: column;
+        align-items: center;}
+/* Services-Section */
+.Services {
+            display: grid;
+            grid-template-columns: 1fr;
+            place-items: center;
+            gap: 40px;
+            width: 90%;
+            }
+
+.private-tutor { padding: 10px;
+  height: 300px;
+  width: 100%; 
+  border-style: solid;
+  border-color: purple;
+  background: violet;
+  border-radius: 15px;
+  
+}
+.private-tutor:hover { transform: scale(1.05);
+   box-shadow: 0 0 15px purple;}
+
+.group-Lesson {height: 280px;
+  width: 100%; 
+  padding: 10px;
+  border-style: solid;
+  border-color: purple;
+  background: violet;
+  border-radius: 15px;} 
+  
+.group-Lesson:hover { transform: scale(1.05);
+               box-shadow: 0 0 15px purple;}
+
+.online-subject {height: 300px;
+  width: 100%; 
+  border-style: solid;
+  border-color: purple;
+  background: violet;
+  border-radius: 15px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.online-subject:hover { transform: scale(1.05);
+               box-shadow: 0 0 15px purple;}
+h2 { color: white;}
+
+i { padding: 10px;}
+
+.private-tutor_text { text-overflow: ellipsis;
+           line-height: 1.6;}
+.btn3 { height: 40px;
+        background: coral;
+        border-style: none;
+        border-radius: 15px;
+        color: white;
+        float: right;}
+.exam { padding: 10px;
+  height: 300px;
+  width: 100%; 
+  border-style: solid;
+  border-color: purple;
+  background: violet;
+  border-radius: 15px;}
+
+.Student_Support { padding: 10px;
+  height: 300px;
+  width: 100%; 
+  border-style: solid;
+  border-color: purple;
+  background: violet;
+  border-radius: 15px;}
+
+
+  
+  
+</style>
+</head>
+<body>
+  
+  <! Header Section >
+  <header>
+    <img src="hub.png" alt="logo" width="100px" height="80px">
+    <input type="text" class="search" /> 
+    <span class="material-icons" id="search-icon">search</span> 
+     <span id="menu" class="material-icons"> menu</span>
+     </header>
+  
+<! Navigation Section >
+<nav id="nav"> 
+<a href="index.html"><button class="btn"> <span class="material-icons">home</span>Home</button></a>
+<a href="tutors.html"><button class="btn"><span class="material-icons">school</span>Our Tutors</button></a>
+<a href="#services"><button class="btn"><span class="material-icons">miscellaneous_services</span>Services </button></a>
+<a href="career.html"><button class="btn"><span class="material-icons">work</span>Career</button></a>
+<a href="about.html"><button class="btn"><span class="material-icons">info</span>About Us</button></a>
+<a href="contact.html"><button class="btn"><span class="material-icons">support_agent</span>Contact</button></a>
+<div class="login-section">
+  <a href="login.html"><button  class="btn1">Login</button></a>
+    <a href="Signup.html"><button class="btn1">Sign Up</button></a>
+</div>
+</nav>
+
+<! Main-Section >
+
+<main> 
+<section class="hero">
+  <h1><span class="purple">D</span><span class="green">E</span><span class="red">E</span><span class="purple">'S</span><span class="learning-hub"> LEARNING HUB</span></h1>
+  <p class="slogan">Building Bright Futures Through Education</p>
+  
+  <a href="bookTutor.html"><button class="btn1">Book a Tutor</button></a>
+  </section>
+  
+  <section class="slider">
+    
+      <div class="card active">
+        <h3>Flexible Learning</h3>
+        <img src="image5.jpg" width="300px" height="200px">
+        <p class="text">Study anytime, anywhere at your own pace.</p>
+      </div>
+      
+      <div class="card">
+      <h3>Interactive Lessons</h3>
+        <img src="image1.jpeg" width="300px" height="200px">
+        <p class="text">Engaging classes with practical examples and hands-on learning.</p>  
+         </div>
+         
+  <div class="card">
+    <h3>Community Support</h3>
+        <img src="image2.jpeg" width="300px" height="200px">
+        <p class="text">Join a community of learners for collaboration and growth.</p>   </div>
+        
+    <div class="card">
+      <h3>Expert Tutors</h3>
+        <img src="image4.jpeg" width="300px" height="200px">
+        <p class="text">Learn from experienced instructors who simplify tough topics.</p>  </div>
+        
+    
+    <button id="prev">❮</button>
+  <button id="next">❯</button>
+
+  <!-- Dots -->
+  <div class="dots"></div>
+  </section>
+  
+<section id="#services" class="Services">
+  <h2>Services</h2>
+ <div class="private-tutor">
+   <h3><i class="fas fa-chalkboard-teacher"></i>Private Tutoring</h3>
+   <p class="private-tutor_text">We adapt to your child's unique pace. From mastering Math approximations to improving English composition, our one-on-one sessions turn academic challenges into strengths through personalized attention and daily affirmations.</p>
+   <button class="btn3">Learn More</button>
+ </div>
+ <div class="Group-Lesson">
+   
+   <h3><i class="fas fa-users"></i>Group Lesson</h3>
+   <p class="private-tutor_text">Experience the power of collaborative learning. Our group sessions are designed to be interactive, engaging, and highly effective for mastering core subjects together.</p>
+   <button class="btn3">Learn More</button>
+ </div>
+ <div class="online-subject">
+   <h3><i class="fas fa-laptop"></i>Online Subjects</h3>
+   <p>Our digital learning platform brings the excellence of Dee’s Learning Hub directly to your screen. Designed for flexibility, our online courses allow students to master core subjects on their own schedule.</p>
+   <button class="btn3">Learn More</button>
+   </div>
+<div class="exam">
+  <h3><i class="fas fa-bullseye"></i>Exam Preparation</h3>
+  <p>We equip students with the tools and confidence needed to excel in their assessments. Our targeted approach transforms exam stress into academic success through rigorous practice and mental preparation.</p>
+  
+  
+  <button class="btn3">Learn More</button>
+  
+</div>
+<div class="Student_Support
+">
+  
+  
+  
+</div>
+   
+  
+   
+ </div>
+  </section>
+  
+
+  
+</main>
+<script>
+  // toggle menu //
+const menu = document.getElementById("menu");
+const nav = document.getElementById("nav");
+
+let open = false;
+
+menu.addEventListener("click", () => {
+  open = !open;
+
+  nav.classList.toggle("active");
+
+  // change icon
+  menu.textContent = open ? "close" : "menu";
+});
+
+const slides = document.querySelectorAll(".card");
+const next = document.getElementById("next");
+const prev = document.getElementById("prev");
+const dotsContainer = document.querySelector(".dots");
+
+let index = 0;
+let interval;
+
+/* CREATE DOTS */
+slides.forEach((_, i) => {
+  const dot = document.createElement("span");
+  dot.addEventListener("click", () => {
+    index = i;
+    showSlide();
+    resetAuto();
+  });
+  dotsContainer.appendChild(dot);
+});
+
+const dots = document.querySelectorAll(".dots span");
+
+/* SHOW SLIDE */
+function showSlide() {
+  slides.forEach(slide => slide.classList.remove("active"));
+  dots.forEach(dot => dot.classList.remove("active"));
+
+  slides[index].classList.add("active");
+  dots[index].classList.add("active");
+}
+
+/* NEXT / PREV */
+next.addEventListener("click", () => {
+  index = (index + 1) % slides.length;
+  showSlide();
+  resetAuto();
+});
+
+prev.addEventListener("click", () => {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide();
+  resetAuto();
+});
+
+/* AUTO SLIDE */
+function startAuto() {
+  interval = setInterval(() => {
+    index = (index + 1) % slides.length;
+    showSlide();
+  }, 3000);
+}
+
+function resetAuto() {
+  clearInterval(interval);
+  startAuto();
+}
+
+startAuto();
+showSlide();
+
+
+
+  
+</script>
+</body>
+</html>
