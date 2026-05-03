@@ -112,7 +112,7 @@ form { display: flex;
        align-items: center;
        gap: 30px;
        width: 90%;
-       height: 250vh;
+       height: 230vh;
        border: 0.5px solid white;
        border-radius: 15px;}
 
@@ -138,8 +138,8 @@ input[type="checkbox"] {
   accent-color: coral;
 }
          
-.input:focus { border: 2px solid red;
-               box-shadow: 0 0 15px red;}
+.input:focus { border: 2px solid purple;
+               box-shadow: 0 0 15px purple;}
 
 label { color: black;
 }
