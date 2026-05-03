@@ -112,7 +112,7 @@ form { display: flex;
        align-items: center;
        gap: 30px;
        width: 90%;
-       height: 260vh;
+       height: 250vh;
        border: 0.5px solid white;
        border-radius: 15px;}
 
@@ -141,7 +141,7 @@ input[type="checkbox"] {
 .input:focus { border: 2px solid red;
                box-shadow: 0 0 15px red;}
 
-label { color: white;
+label { color: black;
 }
 
-h1,h2,h3,h4 { color: white;}
+h1,h2,h3,h4 { color: black;}
