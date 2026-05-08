@@ -236,7 +236,7 @@ h2,h3 { color: black;}
 .group-Lesson:hover { transform: scale(1.05);
                box-shadow: 0 0 15px purple;}
 
-.online-subject {height: 300px;
+.online-subject {height: 320px;
   width: 100%; 
   border-style: solid;
   border-color: purple;
