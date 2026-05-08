@@ -230,7 +230,7 @@ h2,h3 { color: black;}
   padding: 10px;
   border-style: solid;
   border-color: purple;
-  background: black;
+  background: purple;
   border-radius: 15px;} 
   
 .group-Lesson:hover { transform: scale(1.05);
