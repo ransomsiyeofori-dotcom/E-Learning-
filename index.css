@@ -1,0 +1,285 @@
+ * { box-sizing: border-box;}
+body { margin: 0px;
+       background: #E0B0FF;}
+ 
+ /* Header Section */
+
+ header{ background: purple;
+         position: fixed;
+         left: 0px; top: 0px;
+         height: 80px;
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         box-shadow: 0 0 15px gray;
+         z-index: 999;
+ }
+
+#search-icon { font-size: 40px;
+               color: white;}
+
+#menu { font-size: 40px;
+               color: white;}
+
+#search { height: 30px;
+          border-radius: 15px;
+          outline: none;
+          border-style: none;}
+.toggle-search { position: fixed;
+                top: 80px; left: 0px;
+                 background: purple;
+                 height: 40px;
+                 width: 100%;
+                 box-shadow: 0 0 15px gray;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+        transform: translateY(-100%);}
+
+.toggle-search.active { transform: translateY(0%); transition: transform 0.5s ease-in-out;}
+
+#search:focus { border: 2px solid teal;}
+.icons { display: flex;
+         gap: 5px;}
+
+/* Navigation Section */
+
+nav { height: 100vh;
+      width: 80%;
+      position: fixed;
+      right: 0px; top: 80px;
+      box-shadow: 0 0 15px gray;
+      background: purple;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 10px;
+      gap: 20px;
+      z-index: 1;
+      transform: translateX(100%);
+      box-shadow: 0 0 15px gray;
+      transition: transform 0.9s ease;}
+
+nav.active { transform: translateX(0%);}
+      
+
+.btn { height: 40px;
+       border-style: none;
+       background: transparent;
+       color: white;
+       font-size: 20px;
+       cursor: pointer;}
+
+
+.btn:hover { background: coral;
+             transform: scale(1.09);
+             transition: transform 0.9s ease;}
+
+.login-section { display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 gap: 20px;
+                 width: 100%;
+                height: 200px;}
+                
+
+.btn1 { height: 50px;
+        width: 250px;
+        border-radius: 15px;
+        background: coral;
+        color: white;
+        border-style: none;
+        cursor: pointer;}
+
+.btn1:hover { background: orange;
+              transform: scale(1.09);
+              transition: transform 0.9s ease;
+                box-shadow: 0 0 15px orange;}
+                
+                
+/* Main-Section */
+
+main { margin-top: 80px;
+       height: 2500px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       line-height: 1.6;}
+
+.green { color: green;}
+.red{ color: red;}
+.purple{ color: purple;}
+.learning-hub { color: black;}
+
+.slogan { font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  text-align: center;}
+  
+p { color: black;}
+h2,h3 { color: black;}
+
+
+/* slider-section*/
+
+.slider { position: relative;
+          width: 100%;
+          height: 500px;
+          overflow: hidden;}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  text-align: center;}
+  
+  
+.card img { 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;}
+  
+.card.active {
+  opacity: 1;}
+  
+/* TEXT ANIMATION */
+.text {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s;
+}
+
+.card.active .text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* BUTTONS */
+#prev, #next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* DOTS */
+.dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots .active {
+  background: white;
+}
+
+
+#prev { left: 10px; }
+#next { right: 10px; }
+
+.hero { display: flex;
+        flex-direction: column;
+        align-items: center;}
+
+/* Services-Section */
+.Services {
+            display: grid;
+            grid-template-columns: 1fr;
+            place-items: center;
+            gap: 40px;
+            width: 90%;
+            }
+
+.private-tutor { padding: 10px;
+  height: 340px;
+  width: 100%; 
+  border-style: solid;
+  border-color: purple;
+  background: purple;
+  border-radius: 15px;}
+  
+.private-tutor:hover { transform: scale(1.05);
+   box-shadow: 0 0 15px purple;}
+
+.group-Lesson {height: 300px;
+  width: 100%; 
+  padding: 10px;
+  border-style: solid;
+  border-color: purple;
+  background: purple;
+  border-radius: 15px;} 
+  
+.group-Lesson:hover { transform: scale(1.05);
+               box-shadow: 0 0 15px purple;}
+
+.online-subject {height: 300px;
+  width: 100%; 
+  border-style: solid;
+  border-color: purple;
+  background: purple;
+  border-radius: 15px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.online-subject:hover { 
+               transform: scale(1.05);
+               box-shadow: 0 0 15px purple;}
+
+
+i { padding: 10px;}
+
+.private-tutor_text { text-overflow: ellipsis;
+           line-height: 1.6;}
+.btn3 { height: 40px;
+        background: coral;
+        border-style: none;
+        border-radius: 15px;
+        color: black;
+        float: right;}
+.btn3:hover { transform: scale(1.05);
+              background: orange;}
+
+.exam { padding: 10px;
+  height: 320px;
+  width: 100%; 
+  border-style: solid;
+  border-color: purple;
+  background: purple;
+  border-radius: 15px;}
+.exam:hover {transform: scale(1.05);
+               box-shadow: 0 0 15px purple;}
+
+.Student_Support { padding: 10px;
+  height: 290px;
+  width: 100%; 
+  border-style: solid;
+  border-color: purple;
+  background: purple;
+  border-radius: 15px;}
+.Student_Support:hover {
+  transform: scale(1.05);
+               box-shadow: 0 0 15px purple;}
