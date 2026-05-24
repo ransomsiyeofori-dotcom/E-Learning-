@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+   <html lang="en">
+    <head><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400..700&family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <! header section >
+    <header>
+    <img src="hub.png" alt="logo" width="100px" height="80px">
+  
+    <div class="icons">
+    <span class="material-icons" id="search-icon">search</span> 
+     <span id="menu" class="material-icons"> menu</span>
+     </div>
+     </header>
+     
+ <! Navigation Section >
+<nav id="nav"> 
+<a href="index.html"><button class="btn"> <span class="material-icons">home</span>Home</button></a>
+<a href="tutors.html"><button class="btn"><span class="material-icons">school</span>Our Tutors</button></a>
+<a href="#services"><button class="btn"><span class="material-icons">miscellaneous_services</span>Services </button></a>
+<a href="career.html"><button class="btn"><span class="material-icons">work</span>Career</button></a>
+<a href="about.html"><button class="btn"><span class="material-icons">info</span>About Us</button></a>
+<a href="contact.html"><button class="btn"><span class="material-icons">support_agent</span>Contact</button></a>
+<div class="login-section">
+  <a href="Login.html"><button  id="btn1">Login</button></a>
+    <a href="signup.html"><button id="btn1">Sign Up</button></a>
+</div>
+</nav>
+
+
+
+<div class="section">
+  
+  <! Form-Section >
+  
+<form id="myForm">
+  <h2>Login</h2>
+  <div class="div">
+  <label for="email">Email</label>
+  <input type="text" placeholder="Enter email" id="email" class="input" />
+  <small id="emailError"></small>
+  </div>
+  
+  <div class="div">
+ <label for="password">Password</label>
+    <input type="text" placeholder="Enter password" id="password" class="input">
+    <small id="passwordError"></small>
+    </div>
+    
+  <div class="check">
+        <input type="checkbox" value="yes">
+            <p class="checkbox">Remember me</p>
+    <a href="Forgot.html"><strong>Forgot password?</strong></a>
+    </div>
+  <div class="modal" id="successModal">
+    <div class="container1" id="container1">
+      <h2 class="success-message">Success🚀</h2>
+    <p class="Success">Your Login was  successfull.</p>  
+ <button class="btn2" id="closeBtn">Close</button>
+
+      
+      
+    </div>
+  </div>
+
+
+    
+<button type="submit" class="button" id="submitBtn"><span id="btnText">Login</span>
+ <div class="spinner" id="spinner"></div>
+</button>
+
+
+<p>Don't have an account? <a href="Signup.html"><strong>Register</strong></a></p>
+
+  
+    
+     
+</form>
+</div>
+   <script src="Login.js"></script> 
+</body>
+</html>
