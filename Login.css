@@ -93,10 +93,11 @@ nav.active { transform: translateX(0%);
         background: coral;
         color: white;
         border-style: none;
-        cursor: pointer;}
+        cursor: pointer;
+        transition: 0.5s ease;}
 
 #btn1:hover { background: gray;
-              transform: scale(1.09);}
+              transform: scale(1.0;}
 
 
 
@@ -150,7 +151,7 @@ input[type="checkbox"] {
         transition: 0.5s ease;}
 
 .btn1:hover { background: gray;
-              transform: scale(1.09);}
+              transform: scale(1.0);}
                 
 .check { display: flex;
          align-items: center;
