@@ -89,16 +89,14 @@ nav.active { transform: translateX(0%);
                 
 #btn1 { height: 50px;
         width: 250px;
-        border-radius: 15px;
+        border-radius: 5px;
         background: coral;
         color: white;
         border-style: none;
         cursor: pointer;}
 
-#btn1:hover { background: orange;
-              transform: scale(1.09);
-              transition: transform 0.9s ease;
-                box-shadow: 0 0 15px orange;}
+#btn1:hover { background: gray;
+              transform: scale(1.09);}
 
 
 
@@ -126,7 +124,7 @@ nav.active { transform: translateX(0%);
 
 .input { height: 50px;
          width: 100%;
-         border-radius: 15px;
+         border-radius: 5px;
          border-style: none;
          outline: none;}
 
@@ -144,16 +142,15 @@ input[type="checkbox"] {
 
 .btn1 { height: 50px;
         width: 90%;
-        border-radius: 15px;
+        border-radius: 5px;
         background: coral;
         color: white;
         border-style: none;
-        cursor: pointer;}
+        cursor: pointer;
+        transition: 0.5s ease;}
 
-.btn1:hover { background: orange;
-              transform: scale(1.09);
-              transition: transform 0.9s ease;
-                box-shadow: 0 0 15px orange;}
+.btn1:hover { background: gray;
+              transform: scale(1.09);}
                 
 .check { display: flex;
          align-items: center;
@@ -239,7 +236,7 @@ h2 { color: black;}
   gap: 10px;
   height: 50px;
   width: 90%;
-  border-radius: 15px;
+  border-radius: 5px;
  background: coral;
  color: white;
  border-style: none;
