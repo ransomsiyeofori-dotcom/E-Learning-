@@ -86,16 +86,16 @@ nav.active { transform: translateX(0%);}
 
 .btn1 { height: 50px;
         width: 250px;
-        border-radius: 15px;
+        border-radius: 5px;
         background: coral;
         color: white;
         border-style: none;
-        cursor: pointer;}
+        cursor: pointer;
+transition;}
 
 .btn1:hover { background: orange;
               transform: scale(1.09);
-              transition: transform 0.9s ease;
-                box-shadow: 0 0 15px orange;}
+          }
                 
                 
 /* Main-Section */
