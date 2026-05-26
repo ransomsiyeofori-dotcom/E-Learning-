@@ -93,7 +93,7 @@ nav.active { transform: translateX(0%);}
         cursor: pointer;
 transition;}
 
-.btn1:hover { background: orange;
+.btn1:hover { background: gray;
               transform: scale(1.09);
           }
                 
