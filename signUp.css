@@ -1,8 +1,9 @@
-       * { box-sizing: border-box;}
+       
+          * { box-sizing: border-box;}
 body { margin: 0px;
        background: #E0B0FF;}
  
- /* Header Section */
+ /*---------Header Section---------*/
 
  header{ background: purple;
          position: fixed;
@@ -13,8 +14,7 @@ body { margin: 0px;
          align-items: center;
          justify-content: space-between;
          box-shadow: 0 0 15px gray;
-         z-index: 999;
- }
+         z-index: 999; }
 
 #search-icon { font-size: 40px;
                color: white;}
@@ -44,7 +44,7 @@ body { margin: 0px;
 .icons { display: flex;
          gap: 5px;}
 
-/* Navigation Section */
+/*-----------Navigation Section--------*/
 
 nav { height: 100vh;
       width: 80%;
@@ -57,7 +57,7 @@ nav { height: 100vh;
       align-items: flex-end;
       padding: 10px;
       gap: 20px;
-      z-index: 1;
+      z-index: 999;
       transform: translateX(100%);
       box-shadow: 0 0 15px gray;
       transition: transform 0.9s ease;
@@ -90,19 +90,17 @@ nav.active { transform: translateX(0%);
 
 #btn1 { height: 50px;
         width: 250px;
-        border-radius: 15px;
+        border-radius: 10px;
         background: coral;
         color: white;
         border-style: none;
         cursor: pointer;}
 
-#btn1:hover { background: orange;
-              transform: scale(1.09);
-              transition: transform 0.9s ease;
-                box-shadow: 0 0 15px orange;}
+#btn1:hover { background: gray;
+              transform: scale(1.01);}
 
 
-/*_____________________Main*/
+/*--------Main-------*/
 
 
 .main { display: flex;
@@ -114,31 +112,32 @@ nav.active { transform: translateX(0%);
 }
        
 
+/* ------------SignUp--------*/
 
 .form1 { display: flex;
        flex-direction: column;
        align-items: center;
        justify-content: center;
        gap: 30px;
-       height: 150vh;
+       height: 160vh;
        width: 90%;
        border-radius: 10px;
        border: 0.5px solid white;}
   
  .input1 { height: 50px;
-         border-radius: 15px;
+         border-radius: 10px;
          border-style: none;
          outline: none;
-         width: 100%;
- }
+         width: 100%;}
+         
 .input1:focus { border: 2px solid purple;
               box-shadow: 0 0 15px purple;} 
  .input { height: 50px;
-         border-radius: 15px;
+         border-radius: 10px;
          border-style: none;
          outline: none;
-         width: 100%;
- }
+         width: 100%;}
+         
 .input:focus { border: 2px solid purple;
               box-shadow: 0 0 15px purple;} 
 
@@ -156,16 +155,14 @@ input[type="checkbox"] {
 
 .btn1 { height: 50px;
         width: 90%;
-        border-radius: 15px;
+        border-radius: 10px;
         background: coral;
         color: white;
         border-style: none;
         cursor: pointer;}
 
-.btn1:hover { background: orange;
-              transform: scale(1.09);
-              transition: transform 0.9s ease;
-                box-shadow: 0 0 15px orange;}
+.btn1:hover { background: gray;
+              transform: scale(1.01);}
   .terms { display: flex;
          align-items: center;
          width: 90%;}
@@ -176,7 +173,7 @@ a { color: coral;
 }
 small { color: red;}
 
-/* _________________ Modal____*/
+/*------------ Modal--------*/
 
 .modal { height: 40vh;
        width: 70%;
@@ -193,8 +190,8 @@ small { color: red;}
        justify-content: column;
        visibility: hidden;
        opacity: 0;
-       transition: 0.5s ease;
-    }
+       transition: 0.5s ease;}
+       
 .modal.active { visibility: visible;
                 opacity: 1;}
 #Btn { height: 30px;
@@ -202,12 +199,46 @@ small { color: red;}
         border-style: none;
         border-radius: 10px;
         background: coral;
-        color: white;
-}
+        color: white;}
         
-#Btn:hover { background: darkorange;
-              transform: scale(1.09);}
+#Btn:hover { background: gray;
+              transform: scale(1.01);}
 .h2 { color: white;}
 .p { color: white;}
 
-                
+.item { width: 90%;}
+
+/* Spinner */
+.spinner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner-container.active {
+  display: flex;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #fff;
+  border-top: 5px solid #00bfff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+                   
