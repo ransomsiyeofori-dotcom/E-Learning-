@@ -1,8 +1,8 @@
- * { box-sizing: border-box;}
+   * { box-sizing: border-box;}
 body { margin: 0px;
        background: #E0B0FF;}
  
- /* Header Section */
+ /* -----Header Section-------*/
 
  header{ background: purple;
          position: fixed;
@@ -35,9 +35,11 @@ body { margin: 0px;
                  display: flex;
                  align-items: center;
                  justify-content: center;
-        transform: translateY(-100%);}
+        transform: translateY(-100%);
+        transition: 0.5s ease;
+}
 
-.toggle-search.active { transform: translateY(0%); transition: transform 0.5s ease-in-out;}
+.toggle-search.active { transform: translateY(0%);}
 
 #search:focus { border: 2px solid teal;}
 .icons { display: flex;
@@ -59,9 +61,12 @@ nav { height: 100vh;
       z-index: 1;
       transform: translateX(100%);
       box-shadow: 0 0 15px gray;
-      transition: transform 0.9s ease;}
+      transition: transform 0.9s ease;
+  
+}
 
-nav.active { transform: translateX(0%);}
+nav.active { transform: translateX(0%);
+}
       
 
 .btn { height: 40px;
@@ -86,22 +91,21 @@ nav.active { transform: translateX(0%);}
 
 .btn1 { height: 50px;
         width: 250px;
-        border-radius: 5px;
+        border-radius: 10px;
         background: coral;
         color: white;
         border-style: none;
-        cursor: pointer;
-transition;}
+        cursor: pointer;}
 
 .btn1:hover { background: gray;
-              transform: scale(1.09);
-          }
+              transform: scale(1.0);}
                 
                 
-/* Main-Section */
+/*-------Main-Section------*/
 
-main { margin-top: 80px;
-       height: 2500px;
+main { 
+  margin-top: 80px;
+       height: 3500px;
        display: flex;
        flex-direction: column;
        align-items: center;
@@ -122,11 +126,11 @@ p { color: black;}
 h2,h3 { color: black;}
 
 
-/* slider-section*/
+/*-------slider-section--------*/
 
 .slider { position: relative;
           width: 100%;
-          height: 500px;
+          height: 450px;
           overflow: hidden;}
 
 .card {
@@ -146,7 +150,8 @@ h2,h3 { color: black;}
 .card.active {
   opacity: 1;}
   
-/* TEXT ANIMATION */
+/*---------TEXT ANIMATION-------*/
+
 .text {
   position: absolute;
   bottom: 30px;
@@ -175,7 +180,7 @@ h2,h3 { color: black;}
   cursor: pointer;
 }
 
-/* DOTS */
+/*------DOTS-----*/
 .dots {
   position: absolute;
   bottom: 10px;
@@ -205,7 +210,8 @@ h2,h3 { color: black;}
         flex-direction: column;
         align-items: center;}
 
-/* Services-Section */
+/*-------- Services-Section------*/
+
 .Services {
             display: grid;
             grid-template-columns: 1fr;
@@ -213,6 +219,7 @@ h2,h3 { color: black;}
             gap: 40px;
             width: 90%;
             }
+            
 
 .private-tutor { padding: 10px;
   height: 340px;
@@ -236,7 +243,7 @@ h2,h3 { color: black;}
 .group-Lesson:hover { transform: scale(1.05);
                box-shadow: 0 0 15px purple;}
 
-.online-subject {height: 340px;
+.online-subject {height: 300px;
   width: 100%; 
   border-style: solid;
   border-color: purple;
@@ -246,8 +253,8 @@ h2,h3 { color: black;}
   border-radius: 15px;
 }
 .online-subject:hover { 
-            transform: scale(1.05);
-          box-shadow: 0 0 15px purple;}
+               transform: scale(1.05);
+               box-shadow: 0 0 15px purple;}
 
 
 i { padding: 10px;}
@@ -283,3 +290,14 @@ i { padding: 10px;}
 .Student_Support:hover {
   transform: scale(1.05);
                box-shadow: 0 0 15px purple;}
+
+/*--------About-section --------*/
+
+.about { display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         height: 50vh;
+         width: 90%;}
+         
+.section-p { text-align: center;}
