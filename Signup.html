@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Signup Page</title>
-<link rel="stylesheet" href="signUp.css"  > 
+<link rel="stylesheet" href="signUp.css"  > <title>SignUp</title>
 </head>
 <body>
   <! header section >
@@ -22,7 +22,8 @@
      </div>
      </header>
      
-  <! Navigation Section >
+  <!---------Navigation Section-------->
+  
 <nav id="nav"> 
 <a href="index.html"><button class="btn"> <span class="material-icons">home</span>Home</button></a>
 <a href="tutors.html"><button class="btn"><span class="material-icons">school</span>Our Tutors</button></a>
@@ -36,7 +37,7 @@
 </div>
 </nav>
 
-<!_____________________Main>
+<!-----------Main--------->
 
 <main class="main">
   <div class="modal" id="modal">
@@ -78,13 +79,15 @@
     </div>
   
   <div class="item">
-    <div>
-       <input type="checkbox" value="yes" id="terms">
+       <input type="checkbox" value="yes">
       <label for="Affirmation">I understand that every session begins with positive affirmations and prayer to build my child’s confidence and focus</label>
-     </div>
-    </div>
+   </div>
   
   <button type="submit" class="btn1">Sign Up</button>
+  <!-- Spinner -->
+<div id="spinner" class="spinner-container">
+  <div class="loader"></div>
+</div>
 
  <p>Have an account? <strong><a href="Login.html">Login</a></strong></p>
     
