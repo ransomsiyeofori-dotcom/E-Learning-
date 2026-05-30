@@ -95,3 +95,20 @@ const observer = new IntersectionObserver((entries) => {
 cards.forEach((card) => {
   observer.observe(card);
 });
+
+//----------Intro-Animetion-------//
+window.addEventListener("load", () => {
+
+  setTimeout(() => {
+
+    const intro = document.getElementById("intro");
+
+    intro.classList.add("fade-out");
+
+    setTimeout(() => {
+      intro.remove();
+    }, 800);
+
+  }, 2000);
+
+});
