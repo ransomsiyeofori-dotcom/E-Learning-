@@ -78,3 +78,20 @@ const search = document.getElementById("search");
 icon.addEventListener("click", () => {
   search.classList.toggle("active");
 });
+
+//----------IntersectionObserver-----//
+
+const cards = document.querySelectorAll(".Service");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+cards.forEach((card) => {
+  observer.observe(card);
+});
