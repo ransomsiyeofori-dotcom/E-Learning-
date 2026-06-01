@@ -1,4 +1,4 @@
-const menu = document.getElementById("menu");
+ const menu = document.getElementById("menu");
 const nav = document.getElementById("nav");
 
 let open = false;
@@ -186,5 +186,3 @@ console.log(iti.isValidNumber());
 Btn.addEventListener("click", () => {
   modal.classList.remove("active");
 });
-          
-    
