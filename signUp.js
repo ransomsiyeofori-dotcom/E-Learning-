@@ -126,9 +126,7 @@ form.addEventListener("submit", async (e) => {
 
   // SHOW SPINNER (Will fire properly now that no errors interrupt execution)
   spinner.classList.add("active");
-console.log(rawPhoneInput);
-console.log(phoneValue);
-console.log(iti.isValidNumber());
+
   try {
     const response = await fetch(
       "https://edtech-backend-7.onrender.com/signup",
