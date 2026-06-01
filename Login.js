@@ -1,4 +1,4 @@
-      // toggle menu //
+          // toggle menu //
 const menu = document.getElementById("menu");
 const nav = document.getElementById("nav");
 
@@ -37,6 +37,7 @@ const submitBtn = document.getElementById("submitBtn");
 
 
 // EMAIL VALIDATION
+
 function validateEmail() {
 
   let emailValue = email.value.trim();
@@ -100,12 +101,16 @@ password.addEventListener("input", validatePassword);
 
 
 // FORM SUBMIT
-form.addEventListener("submit", function (e) {
+form.addEventListener("submit", async function (e) {
 
   e.preventDefault();
 
   let emailValid = validateEmail();
   let passwordValid = validatePassword();
+
+  // GET VALUES
+  const emailValue = email.value.trim();
+  const passwordValue = password.value.trim();
 
   if (emailValid && passwordValid) {
 
@@ -115,31 +120,75 @@ form.addEventListener("submit", function (e) {
 
     submitBtn.disabled = true;
 
-    // FAKE LOADING
-    setTimeout(() => {
+    try {
 
+      const response = await fetch("https://edtech-backend-7.onrender.com/login", {
+
+        method: "POST",
+
+        headers: {
+          "Content-Type": "application/json"
+        },
+
+        body: JSON.stringify({
+          email: emailValue,
+          password: passwordValue
+        })
+
+      });
+
+      const data = await response.json();
+
+      // STOP SPINNER
       spinner.style.display = "none";
       btnText.innerText = "Submit";
 
+      submitBtn.disabled = false;
+
+      // LOGIN FAILED
+      if (!data.success) {
+
+        alert(data.message);
+
+        return;
+      }
+
+      // SAVE TOKEN
+      localStorage.setItem("token", data.token);
+
+      // SUCCESS MODAL
       successModal.classList.add("active");
 
+      // RESET FORM
       form.reset();
 
       email.style.border = "";
       password.style.border = "";
 
+      // REDIRECT TO DASHBOARD
+      setTimeout(() => {
+
+        window.location.href = "dashboard.html";
+
+      }, 1500);
+
+    } catch (error) {
+
+      console.log(error);
+
+      spinner.style.display = "none";
+      btnText.innerText = "Submit";
+
       submitBtn.disabled = false;
 
-    }, 2000);
+      alert("Server error");
+
+    }
 
   }
 
 });
+    
 
-
-// CLOSE MODAL
-closeBtn.addEventListener("click", () => {
-
-  successModal.classList.remove("active");
-
-});
+    
+      
