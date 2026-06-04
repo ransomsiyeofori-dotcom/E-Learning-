@@ -1,4 +1,5 @@
-          // toggle menu //
+
+      // toggle menu //
 const menu = document.getElementById("menu");
 const nav = document.getElementById("nav");
 
@@ -137,24 +138,29 @@ form.addEventListener("submit", async function (e) {
 
       });
 
-      const data = await response.json();
+const data = await response.json();
 
-      // STOP SPINNER
-      spinner.style.display = "none";
-      btnText.innerText = "Submit";
+console.log("STATUS:", response.status);
+console.log("DATA:", data);
 
-      submitBtn.disabled = false;
+// STOP SPINNER
+spinner.style.display = "none";
+btnText.innerText = "Submit";
+submitBtn.disabled = false;
 
-      // LOGIN FAILED
-      if (!data.success) {
+if (!response.ok) {
+  alert(data.message || "Login failed");
+  return;
+}
 
-        alert(data.message);
-
-        return;
-      }
+if (!data.success) {
+  alert(data.message || "Invalid login");
+  return;
+}
 
       // SAVE TOKEN
       localStorage.setItem("token", data.token);
+
 
       // SUCCESS MODAL
       successModal.classList.add("active");
@@ -188,6 +194,8 @@ form.addEventListener("submit", async function (e) {
   }
 
 });
+
+
     
 
     
