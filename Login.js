@@ -195,6 +195,13 @@ if (!data.success) {
 
 });
 
+const Btn = document.getElementById("closeBtn");
+Btn.addEventListener("click", () => {
+    successModal.classList.remove("active");
+  
+  
+});
+
 
     
 
