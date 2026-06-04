@@ -174,7 +174,7 @@ if (!data.success) {
       // REDIRECT TO DASHBOARD
       setTimeout(() => {
 
-        window.location.href = "dashboard.html";
+        window.location.href = "Dashboard.html";
 
       }, 1500);
 
