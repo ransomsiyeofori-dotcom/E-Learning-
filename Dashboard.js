@@ -37,5 +37,35 @@ menu.addEventListener("click", () => {
   // change icon
   menu.textContent = open ? "close" : "menu";
 });
+
+// logout and modal //
+
+const modal = document.getElementById("logoutModal");
+const cancelBtn = document.getElementById("cancelLogout");
+const confirmBtn = document.getElementById("confirmLogout");
+
+// OPEN MODAL (attach this to your logout button)
+function openLogoutModal() {
+  modal.classList.add("active");
+}
+
+// CLOSE MODAL
+function closeLogoutModal() {
+  modal.classList.remove("active");
+}
+
+// ACTUAL LOGOUT
+function logout() {
+  localStorage.removeItem("token");
+  window.location.href = "login.html";
+}
+
+// EVENTS
+document.getElementById("logoutBtn").addEventListener("click", openLogoutModal);
+
+cancelBtn.addEventListener("click", closeLogoutModal);
+
+confirmBtn.addEventListener("click", logout);
+
   
   
