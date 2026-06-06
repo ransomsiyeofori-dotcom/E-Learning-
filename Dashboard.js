@@ -2,7 +2,7 @@ const token = localStorage.getItem("token");
 
 // PROTECT DASHBOARD
 if (!token) {
-  window.location.href = "login.html";
+  window.location.href = "Login.html";
 }
 
 // GET USER INFO
@@ -44,7 +44,7 @@ const modal = document.getElementById("logoutModal");
 const cancelBtn = document.getElementById("cancelLogout");
 const confirmBtn = document.getElementById("confirmLogout");
 
-// OPEN MODAL (attach this to your logout button)
+
 function openLogoutModal() {
   modal.classList.add("active");
 }
@@ -57,7 +57,7 @@ function closeLogoutModal() {
 // ACTUAL LOGOUT
 function logout() {
   localStorage.removeItem("token");
-  window.location.href = "Login.html";
+  window.location.href = "login.html";
 }
 
 // EVENTS
@@ -66,6 +66,26 @@ document.getElementById("logoutBtn").addEventListener("click", openLogoutModal);
 cancelBtn.addEventListener("click", closeLogoutModal);
 
 confirmBtn.addEventListener("click", logout);
+
+// IntersectionObserver //
+
+const cards = document.querySelectorAll(".card");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const index = [...cards].indexOf(entry.target);
+
+      setTimeout(() => {
+        entry.target.classList.add("show");
+      }, index * 200);
+
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+cards.forEach((card) => observer.observe(card));
 
   
   
