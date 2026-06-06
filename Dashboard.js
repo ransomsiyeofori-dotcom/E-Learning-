@@ -57,7 +57,7 @@ function closeLogoutModal() {
 // ACTUAL LOGOUT
 function logout() {
   localStorage.removeItem("token");
-  window.location.href = "login.html";
+  window.location.href = "Login.html";
 }
 
 // EVENTS
