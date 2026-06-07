@@ -141,7 +141,16 @@ nav.active { transform: translateX(0%);
 .div { display: flex;
        flex-direction: column;
        gap: 20px;
-       width: 90%;}
+       width: 90%;
+       position: relative;
+       }
+
+#togglePassword { position: absolute;
+           right: 8%; bottom: 32%;
+}
+#fa-envelope { position: absolute;
+              right: 8%; bottom: 32%;}
+
        
 input[type="checkbox"] {
   accent-color: coral;}
