@@ -1,5 +1,5 @@
 
-      // toggle menu //
+            // toggle menu //
 const menu = document.getElementById("menu");
 const nav = document.getElementById("nav");
 
@@ -46,16 +46,10 @@ function validateEmail() {
   emailError.innerText = "";
 
   if (emailValue === "") {
-
-    emailError.innerText = "Field must not be empty";
     email.style.border = "2px solid red";
+return false; }
 
-    return false;
-  }
-
-  if (!emailValue.includes("@") || !emailValue.includes(".")) {
-
-    emailError.innerText = "@ or . is missing";
+  if (!emailValue.includes("@") || !emailValue.includes(".")){
     email.style.border = "2px solid red";
 
     return false;
@@ -75,16 +69,12 @@ function validatePassword() {
   passwordError.innerText = "";
 
   if (passwordValue === "") {
-
-    passwordError.innerText = "Field must not be empty";
     password.style.border = "2px solid red";
 
     return false;
   }
 
   if (passwordValue.length <= 6) {
-
-    passwordError.innerText = "Characters must be greater than 6";
     password.style.border = "2px solid red";
 
     return false;
@@ -174,7 +164,7 @@ if (!data.success) {
       // REDIRECT TO DASHBOARD
       setTimeout(() => {
 
-        window.location.href = "Dashboard.html";
+        window.location.href = "dashboard.html";
 
       }, 1500);
 
@@ -194,14 +184,11 @@ if (!data.success) {
   }
 
 });
-
 const Btn = document.getElementById("closeBtn");
 Btn.addEventListener("click", () => {
     successModal.classList.remove("active");
+  });
   
-  
-});
-
   // Password toggle //
   
 const togglePassword = document.getElementById("togglePassword");
@@ -214,8 +201,41 @@ togglePassword.addEventListener("click", () => {
   togglePassword.classList.toggle("fa-eye-slash");
 });
 
+//---------forgot password modal------//
 
-    
+const forgot = document.getElementById("forgot");
+const container = document.getElementById("container2");
+const xmark = document.getElementById("xmark");
 
-    
-      
+
+forgot.addEventListener("click", () =>{
+  container.classList.add("active");
+  form.classList.add("active");
+  
+});
+
+xmark.addEventListener("click", () =>{
+  container.classList.remove("active");
+  form.classList.remove("active");
+  
+});
+
+//--------request otp----------//
+
+const requestOtpBtn = document.getElementById("otp");
+
+requestOtpBtn.addEventListener("click", async () => {
+  const email = emailInput.value;
+
+  const res = await fetch("/api/auth/request-otp", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ email }),
+  });
+
+  const data = await res.json();
+  alert(data.message);
+});
+
