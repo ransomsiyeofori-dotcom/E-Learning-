@@ -202,6 +202,18 @@ Btn.addEventListener("click", () => {
   
 });
 
+  // Password toggle //
+  
+const togglePassword = document.getElementById("togglePassword");
+
+togglePassword.addEventListener("click", () => {
+  password.type =
+    password.type === "password" ? "text" : "password";
+
+  togglePassword.classList.toggle("fa-eye");
+  togglePassword.classList.toggle("fa-eye-slash");
+});
+
 
     
 
