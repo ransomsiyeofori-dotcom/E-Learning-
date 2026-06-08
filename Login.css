@@ -160,6 +160,9 @@ nav.active { transform: translateX(0%);
 input[type="checkbox"] {
   accent-color: coral;}
 
+.blur { filter: blur(5px);
+   pointer-events: none;}
+
 .btn1 { height: 50px;
         width: 90%;
         border-radius: 10px;
