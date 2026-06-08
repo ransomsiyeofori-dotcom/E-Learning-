@@ -277,13 +277,13 @@ h2 { color: black;}
 /*-------------forgot password modal----------*/
 
 .container2 { width: 90%;
-              height: 70%;
+              height: 70vh;
               border-radius: 10px;
               background: #E0B0FF;
               position: fixed;
               top: 20%; left: 5%;
               z-index: 999;
-              border: 2px solid coral;
+              border: 2px solid white;
               display: flex;
               flex-direction: column;
               align-items: center;
