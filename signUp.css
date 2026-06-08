@@ -17,7 +17,6 @@ body { margin: 0px;
          display: flex;
          align-items: center;
          justify-content: space-between;
-         box-shadow: 0 0 15px gray;
          z-index: 999; }
 
 #search-icon { font-size: 40px;
@@ -67,7 +66,6 @@ nav { height: 100vh;
       gap: 20px;
       z-index: 999;
       transform: translateX(100%);
-      box-shadow: 0 0 15px gray;
       transition: transform 0.9s ease;
   
 }
