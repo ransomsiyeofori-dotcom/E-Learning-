@@ -304,14 +304,16 @@ h2 { color: black;}
     width: 100%;
     position: relative;
 }
-#lock4 { position: absolute;
-         top: 55%; right: 7%;}
+#lock3 { position: absolute;
+         left: 3%; bottom: 23%;}
+    
     
 #emailreset { height: 50px;
            width: 100%;
            border-radius: 10px;
            outline: none;
-           border-style: none;}
+           border-style: none;
+           padding-left: 25px;}
            
 #emailreset:focus { border: 2px solid purple;
   box-shadow: 0 0 5px purple;
