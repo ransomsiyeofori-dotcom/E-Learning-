@@ -1,5 +1,4 @@
-
-            // toggle menu //
+      // toggle menu //
 const menu = document.getElementById("menu");
 const nav = document.getElementById("nav");
 
@@ -29,9 +28,6 @@ const closeBtn = document.getElementById("closeBtn");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 
-const passwordError = document.getElementById("passwordError");
-const emailError = document.getElementById("emailError");
-
 const spinner = document.getElementById("spinner");
 const btnText = document.getElementById("btnText");
 const submitBtn = document.getElementById("submitBtn");
@@ -43,7 +39,6 @@ function validateEmail() {
 
   let emailValue = email.value.trim();
 
-  emailError.innerText = "";
 
   if (emailValue === "") {
     email.style.border = "2px solid red";
@@ -66,7 +61,6 @@ function validatePassword() {
 
   let passwordValue = password.value.trim();
 
-  passwordError.innerText = "";
 
   if (passwordValue === "") {
     password.style.border = "2px solid red";
@@ -220,22 +214,9 @@ xmark.addEventListener("click", () =>{
   
 });
 
-//--------request otp----------//
+            
 
-const requestOtpBtn = document.getElementById("otp");
+   
 
-requestOtpBtn.addEventListener("click", async () => {
-  const email = emailInput.value;
-
-  const res = await fetch("/api/auth/request-otp", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ email }),
-  });
-
-  const data = await res.json();
-  alert(data.message);
-});
-
+        
+       
