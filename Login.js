@@ -197,22 +197,23 @@ togglePassword.addEventListener("click", () => {
 
 //---------forgot password modal------//
 
-const forgot = document.getElementById("forgot");
+const press = document.getElementById("forgot");
 const container = document.getElementById("container2");
 const xmark = document.getElementById("xmark");
 
-
-forgot.addEventListener("click", () =>{
+press.addEventListener("click", () => {
   container.classList.add("active");
-  form.classList.add("active");
-  
+  form.classList.add("blur");
+  });
+xmark.addEventListener("click", () => {
+  container.classList.remove("active");
+  form.classList.remove("blur");
 });
 
-xmark.addEventListener("click", () =>{
-  container.classList.remove("active");
-  form.classList.remove("active");
-  
-});
+
+
+
+
 
             
 
