@@ -210,6 +210,15 @@ xmark.addEventListener("click", () => {
   form.classList.remove("blur");
 });
 
+  // error modal //
+ const errorModal = document.getElementById("modal-container");
+  
+  if (emailValue === "" && passwordValue === ""){  errorModal.classList.add("show");
+    setTimeout(() =>{
+      errorModal.classList.remove("show");}, 2000);
+  }
+
+
 
 
 
