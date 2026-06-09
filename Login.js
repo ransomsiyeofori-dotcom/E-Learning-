@@ -147,8 +147,16 @@ spinner.style.display = "none";
 btnText.innerText = "Submit";
 submitBtn.disabled = false;
 
-if (!response.ok) {
-  alert(data.message || "Login failed");
+// User not found & Invalid credentials //
+const backEndMessage = document.getElementById("backendMessage");
+const backendModal = document.getElementById("modalContainer");
+
+if (!response.ok) { 
+  backendModal.classList.add("show");
+  backendMessage.textContent = data.message;
+  setTimeout(() => {
+    backendModal.classList.remove("show");
+  }, 2000);
   return;
 }
 
