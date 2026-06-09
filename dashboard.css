@@ -7,8 +7,8 @@
             left: 0px; top: 0px;
             height: 80px;
             width: 100%;
-          background: purple;
-          box-shadow: 0 0 15px purple;
+          background: #239;
+          box-shadow: 0 0 15px #239;
             display: flex;
             align-items: center;
             padding-left: 5px;
@@ -54,8 +54,8 @@
 
 .nav { height: 100%;
       width: 80%;
-      background: purple;
-          box-shadow: 0 0 15px purple;
+      background: #239;
+          box-shadow: 0 0 15px #239;
       position: fixed;
       left: 0px; top: 80px;
       transform: translateX(-100%);
@@ -106,8 +106,8 @@ main { display: flex;
 .modal { height: 40%;
          width: 70%;
          border-radius: 10px;
-         border: 2px solid coral;
-         background: purple;
+         border: 2px solid #2398;
+         background: #239;
          display: flex;
          flex-direction: column;
          align-items: center;
@@ -167,7 +167,7 @@ main { display: flex;
   transform: translateY(0);
 }
 .card:hover { transform: scale(1.05);
-            border: 1px solid purple;}
+            border: 1px solid #239;}
 
 .progress { display: flex;}
 .upcoming { display: flex;
