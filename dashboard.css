@@ -166,7 +166,8 @@ main { display: flex;
   opacity: 1;
   transform: translateY(0);
 }
-.card:hover { transform: scale(1.05);}
+.card:hover { transform: scale(1.05);
+            border: 1px solid purple;}
 
 .progress { display: flex;}
 .upcoming { display: flex;
