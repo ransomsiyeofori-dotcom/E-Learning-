@@ -26,7 +26,10 @@ forgotPasswordForm.addEventListener("submit", async (e) => {
     if (spinn) spinn.classList.remove("hidden");
   };
   
-  const successfully = document.getElementById("otp-succeas");
+  function showModal(){
+  const successfully = document.getElementById("otpSuccess");
+    successfully.classList.add("show");
+  }
 
   try {
     // Show spinner and disable button
@@ -46,20 +49,20 @@ forgotPasswordForm.addEventListener("submit", async (e) => {
     const data = await response.json();
     console.log(data);
 
-    if (!response.ok) {
-      alert(data.message || "Failed to send OTP.");
-      stopLoading(); // Turn off spinner so they can retry
-    return;}
+ if (!response.ok) {
+  alert(data.message || "Failed to send OTP.");
+  stopLoading();
+  return;
+}
 
-    // success Block
- alert(data.message || "OTP sent successfully!");
-     
- 
-    // Save email for OTP verification page
-    localStorage.setItem("resetEmail", email);
+// success
+showModal();
+stopLoading();
 
-    // Redirect to OTP page
-    window.location.href = "verify-otp.html";
+setTimeout(() => {
+  localStorage.setItem("resetEmail", email);
+  window.location.href = "verify-otp.html";
+}, 1500);
 
   } catch (error) {
     console.error("Request OTP Error:", error);
