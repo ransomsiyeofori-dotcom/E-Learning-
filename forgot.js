@@ -17,13 +17,13 @@ forgotPasswordForm.addEventListener("submit", async (e) => {
   const startLoading = () => {
     if (submitbtn) submitbtn.disabled = true;
     if (btnWord) btnWord.innerText = "Sending...";
-    if (spinn) spinn.classList.remove("hidden");
+    if (spinn) spinn.classList.add("hidden");
   };
 
   const stopLoading = () => {
     if (submitbtn) submitbtn.disabled = false;
     if (btnWord) btnWord.innerText = "Reset Password";
-    if (spinn) spinn.classList.add("hidden");
+    if (spinn) spinn.classList.remove("hidden");
   };
   
   const successfully = document.getElementById("otp-succeas");
