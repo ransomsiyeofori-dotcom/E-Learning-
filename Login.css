@@ -326,13 +326,13 @@ h2 { color: black;}
   box-shadow: 0 0 5px purple;
 }
 
-#otp { height: 50px;
+#submit { height: 50px;
        width: 100%;
        border-style: none;
        border-radius: 10px;
        color: white;
        background: coral;}
-#otp:hover { transform: scale(1.01);
+#submit:hover { transform: scale(1.01);
              background: gray;}
        
 .container3 { display: flex;
