@@ -9,7 +9,14 @@ forgotPasswordForm.addEventListener("submit", async (e) => {
   const email = document.getElementById("emailreset").value.trim();
 
   if (!email) {
-    alert("Please enter your email");
+    const errModal = document.getElementById("modalContainers");
+  const backendMessages = document.getElementById("backendMessages");
+errModal.classList.add("show");
+backendMessages.textContent = "Field must not be empty!!!";
+setTimeout(()=>{
+  errModal.classList.remove("show");
+},1500);
+  
     return;
   }
 
@@ -51,7 +58,13 @@ forgotPasswordForm.addEventListener("submit", async (e) => {
     console.log(data);
 
  if (!response.ok) {
-  alert(data.message || "Failed to send OTP.");
+  const errModal = document.getElementById("modalContainers");
+  const backendMessages = document.getElementById("backendMessages");
+  errModal.classList.add("show");
+  backendMessages.textContent = data.message;
+  setTimeout(()=>{
+    errModal.classList.remove("show"); },1500);
+  
   stopLoading();
   return;
 }
