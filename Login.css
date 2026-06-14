@@ -389,7 +389,34 @@ color: coral;
  opacity: 1;}
 
 
+ /*------The actual spinning wheel----*/
+.spin {
+  display: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff; /* Color of the spinning part */
+  animation: spin 0.8s linear infinite;
+  margin-left: 8px;
+  vertical-align: middle;
+}
 
+/* Animation keyframes */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Utility class to hide the spinner when not loading */
+.spin.hidden {
+  display: inline-block;
+}
+
+
+
+           
            
 
                
