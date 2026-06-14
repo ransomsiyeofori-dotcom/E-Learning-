@@ -369,6 +369,26 @@ color: coral;
 .modal-container.show { visibility: visible;
  opacity: 1;}
 
+.modalContainers {height: 10vh;
+                   width: 80%;
+                   border-radius: 10px;
+                   position: fixed;
+                   left: 10%; top: 25%;
+                 background: white;
+                 border-radius: 10px;
+                  display: flex; 
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              border-left: 5px solid red;
+              color: red;
+             visibility: hidden;
+             opacity: 0;
+             transition: 0.9s ease;}
+.modalContainers.show { visibility: visible;
+ opacity: 1;}
+ 
+
 .modalContainer { height: 10vh;
                    width: 80%;
                    border-radius: 10px;
