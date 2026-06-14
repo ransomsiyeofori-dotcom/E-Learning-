@@ -29,6 +29,7 @@ forgotPasswordForm.addEventListener("submit", async (e) => {
   function showModal(){
   const successfully = document.getElementById("otpSuccess");
     successfully.classList.add("show");
+    setTimeout(() =>{ successfully.remove("show");},2000);
   }
 
   try {
@@ -62,7 +63,7 @@ stopLoading();
 setTimeout(() => {
   localStorage.setItem("resetEmail", email);
   window.location.href = "verify-otp.html";
-}, 1500);
+}, 2000);
 
   } catch (error) {
     console.error("Request OTP Error:", error);
