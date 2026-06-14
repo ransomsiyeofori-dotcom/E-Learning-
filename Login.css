@@ -32,7 +32,11 @@ body { margin: 0px;
           border-style: none;}
 .toggle-search { position: fixed;
                 top: 80px; left: 0px;
-                 background: purple;
+          background: rgba(128, 0, 128, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
                  height: 40px;
                  width: 100%;
                  box-shadow: 0 0 15px gray;
