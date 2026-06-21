@@ -1,7 +1,8 @@
        
           * { box-sizing: border-box;}
 body { margin: 0px;
-       background: #E0B0FF;}
+        background: linear-gradient(180deg, #0F172A, #1E293B);
+      font-family: 'Poppins', sans-serif;}
  
  /*---------Header Section---------*/
 
@@ -132,7 +133,8 @@ nav.active { transform: translateX(0%);
        height: 160vh;
        width: 90%;
        border-radius: 10px;
-       border: 0.5px solid white;}
+       border: 0.5px solid white;
+       color: white;}
   
  .input1 { height: 50px;
          border-radius: 10px;
@@ -181,7 +183,8 @@ input[type="checkbox"] {
   .terms { display: flex;
          align-items: center;
          width: 90%;}
-p { font-size: 10px;}
+p { font-size: 10px;
+     color: white;}
 a { color: coral;
     text-decoration: none;
   font-size: 15px;
