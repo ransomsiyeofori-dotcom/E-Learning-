@@ -75,7 +75,7 @@ stopLoading();
 
 setTimeout(() => {
   localStorage.setItem("resetEmail", email);
-  window.location.href = "verify-otp.html";
+  window.location.href = "request.html";
 }, 2000);
 
   } catch (error) {
