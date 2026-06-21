@@ -173,7 +173,7 @@ input[type="checkbox"] {
 .btn1 { height: 50px;
         width: 90%;
         border-radius: 10px;
-        background: coral;
+                background: linear-gradient(360deg, purple, coral);
         color: white;
         border-style: none;
         cursor: pointer;}
