@@ -1,7 +1,8 @@
 * {box-sizing: border-box;}
 
 body { margin: 0px;
-   background: #E0B0FF;}
+    background: linear-gradient(180deg, #0F172A, #1E293B);
+      font-family: 'Poppins', sans-serif; }
 
  
  /* Header Section */
@@ -132,6 +133,7 @@ nav.active { transform: translateX(0%);
        border-radius: 15px;
       background: linear-gradient(360deg, purple, coral);
        transition: 0.9s ease;
+color: white;
        visibility: visible;
        opacity: 1;}
 #myForm.active { visibility: hidden;
