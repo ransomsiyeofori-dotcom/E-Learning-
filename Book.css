@@ -94,7 +94,7 @@ nav.active { transform: translateX(0%);}
 #btn1 { height: 50px;
         width: 250px;
         border-radius: 10px;
-        background: coral;
+        background: linear-gradient(360deg, purple, coral);
         color: white;
         border-style: none;
         cursor: pointer;}
@@ -119,8 +119,9 @@ form { display: flex;
        gap: 30px;
        width: 90%;
        height: 255vh;
-       border: 0.5px solid white;
-       border-radius: 10px;}
+       border-radius: 15px;
+        background: linear-gradient(360deg, purple, coral);
+   color: white;}
 
 .item { width: 90%;
         display: flex;
@@ -147,10 +148,10 @@ input[type="checkbox"] {
 .input:focus { border: 2px solid purple;
                box-shadow: 0 0 15px purple;}
 
-label { color: black;
+label { color: white;
 }
 
-h1,h2,h3,h4 { color: black;}
+h1,h2,h3,h4 { color: white;}
 
 
 
