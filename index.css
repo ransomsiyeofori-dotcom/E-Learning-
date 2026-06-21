@@ -126,7 +126,7 @@ main {
 .green { color: green;}
 .red{ color: red;}
 .purple{ color: purple;}
-.learning-hub { color: black;}
+.learning-hub { color: white;}
 
 .slogan { font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
@@ -134,8 +134,8 @@ main {
   font-style: normal;
   text-align: center;}
   
-p { color: black;}
-h2,h3 { color: black;}
+p { color: white;}
+h2,h3 { color: white;}
 
 
 /*-------slider-section--------*/
