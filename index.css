@@ -103,13 +103,13 @@ nav.active { transform: translateX(0%);
 .btn1 { height: 50px;
         width: 250px;
         border-radius: 10px;
-        background: coral;
+       background: linear-gradient(360deg, purple, coral);
         color: white;
         border-style: none;
         cursor: pointer;}
 
 .btn1:hover { background: gray;
-              transform: scale(1.0);}
+              transform: scale(1.01);}
                 
                 
 /*-------Main-Section------*/
@@ -235,9 +235,8 @@ h2,h3 { color: black;}
 #private-tutor { padding: 10px;
   height: 340px;
   width: 100%; 
-  border-style: solid;
-  border-color: purple;
-  background: purple;
+  
+ background: linear-gradient(360deg, purple, coral);
   border-radius: 15px;}
   
 #private-tutor:hover { transform: scale(1.05);
@@ -246,9 +245,7 @@ h2,h3 { color: black;}
 #group-Lesson {height: 300px;
   width: 100%; 
   padding: 10px;
-  border-style: solid;
-  border-color: purple;
-  background: purple;
+  background: linear-gradient(360deg, purple, coral);
   border-radius: 15px;} 
   
 #group-Lesson:hover { transform: scale(1.05);
@@ -256,9 +253,7 @@ h2,h3 { color: black;}
 
 #online-subject {height: 300px;
   width: 100%; 
-  border-style: solid;
-  border-color: purple;
-  background: purple;
+   background: linear-gradient(360deg, purple, coral);
   border-radius: 15px;
   padding: 10px;
   border-radius: 15px;
@@ -284,9 +279,7 @@ i { padding: 10px;}
 #exam { padding: 10px;
   height: 320px;
   width: 100%; 
-  border-style: solid;
-  border-color: purple;
-  background: purple;
+ background: linear-gradient(360deg, purple, coral);
   border-radius: 15px;}
 #exam:hover {transform: scale(1.05);
                box-shadow: 0 0 15px purple;}
@@ -294,9 +287,7 @@ i { padding: 10px;}
 #Student_Support { padding: 10px;
   height: 290px;
   width: 100%; 
-  border-style: solid;
-  border-color: purple;
-  background: purple;
+   background: linear-gradient(360deg, purple, coral);
   border-radius: 15px;}
 #Student_Support:hover {
   transform: scale(1.05);
