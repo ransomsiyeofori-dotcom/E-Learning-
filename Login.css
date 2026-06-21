@@ -338,8 +338,9 @@ h2 { color: white;}
        width: 100%;
        border-style: none;
        border-radius: 10px;
+background: linear-gradient(360deg, purple, coral);
        color: white;
-       background: coral;}
+       }
 #submit:hover { transform: scale(1.01);
              background: gray;}
        
@@ -354,7 +355,8 @@ color: coral;
 }
 
 .fa-envelope { position: absolute;
-           left: 3%; bottom: 32%;}
+           left: 3%; bottom: 32%;
+            color: black;}
 
 /*----------error modal---------------*/
 
