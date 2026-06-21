@@ -28,10 +28,10 @@ form { display: flex;
        width: 100%;
         color: white;}
 
-input { height: 1rem;
-        width: 1rem;
+input { height: 40px;
+        width: 40px;
         border-style: none;
-        border-radius: 5px;
+        border-radius: 50%;
         outline: none;
         padding: 20px;}
 input:focus { border: 2px solid green;
