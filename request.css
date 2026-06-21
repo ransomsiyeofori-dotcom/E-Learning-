@@ -33,7 +33,7 @@ input { height: 40px;
         border-style: none;
         border-radius: 50%;
         outline: none;
-        padding: 20px;}
+        padding: 10px;}
 input:focus { border: 2px solid green;
               box-shadow: 0 0 5px green;}
 
