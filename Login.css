@@ -147,7 +147,8 @@ color: white;
          outline: none;
          padding-left: 25px;}
 #lock5 { position: absolute;
-        left: 3%; bottom: 23%}
+        left: 3%; bottom: 23%;
+         color: black;}
 
 .input:focus { border: 2px solid purple;
               box-shadow: 0 0 5px; purple;
@@ -161,6 +162,7 @@ color: white;
       position: relative;}
 #togglePassword { position: absolute;
            right: 8%; bottom: 20%;
+ color: black;
 }
        
 input[type="checkbox"] {
