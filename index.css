@@ -371,7 +371,8 @@ i { padding: 10px;}
                 overflow-x: scroll;
                 display: flex;
                 align-items: center;
-                gap: 20px;}
+                gap: 20px;
+                 scrollbar-width: none; }
                 
   .why-card { height: 25vh;
               width: 95%;
