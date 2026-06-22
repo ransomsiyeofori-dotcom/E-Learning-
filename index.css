@@ -269,10 +269,10 @@ i { padding: 10px;}
 .private-tutor_text { text-overflow: ellipsis;
            line-height: 1.6;}
 .btn3 { height: 40px;
-        background: coral;
+                background: linear-gradient(360deg, purple, coral);
         border-style: none;
         border-radius: 15px;
-        color: black;
+        color: white;
         float: right;}
 .btn3:hover { transform: scale(1.05);
               background: orange;}
