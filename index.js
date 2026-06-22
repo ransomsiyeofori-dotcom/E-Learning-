@@ -10,7 +10,7 @@ function siderbar() {
   menu.textContent = open ? "close" : "menu";
 }
 
-// Close menu when user taps outside
+// Close menu when user taps outside //
 document.addEventListener("click", (e) => {
   if (
     open &&
@@ -22,6 +22,9 @@ document.addEventListener("click", (e) => {
     open = false;
   }
 });
+
+menu.addEventListener("click", (e) => {
+  if (e.target === menu){siderbar();}});
 
 const slides = document.querySelectorAll(".card");
 const next = document.getElementById("next");
