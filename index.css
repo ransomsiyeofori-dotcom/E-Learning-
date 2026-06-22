@@ -355,3 +355,32 @@ i { padding: 10px;}
   opacity: 0;
   transition: opacity 0.8s ease;
 }
+
+.why-choose {display: flex;
+             flex-direction: column;
+             align-items: center;
+             margin-top: 50px;
+             gap: 30px;
+             height: 50vh;
+             width: 100%;}
+             
+.slider-container {height: 30vh;
+            width: 100%;
+              background: #16213E;
+              padding: 10px;
+                overflow-x: scroll;
+                display: flex;
+                align-items: center;
+                gap: 20px;}
+                
+  .why-card { height: 25vh;
+              width: 95%;
+              background: #FFFFFF;
+              border-radius: 15px;
+               flex-shrink: 0;
+               padding: 10px;}
+
+.h3 { color: black;}
+.why { color: black;}
+                    
+                    
