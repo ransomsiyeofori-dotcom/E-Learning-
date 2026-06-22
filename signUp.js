@@ -23,6 +23,9 @@ document.addEventListener("click", (e) => {
   }
 });
 
+menu.addEventListener("click", (e) => {
+  if (e.target === menu){siderbar();}});
+
 // SEARCH
 const icon = document.getElementById("search-icon");
 const search = document.getElementById("search");
