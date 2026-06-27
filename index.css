@@ -117,7 +117,6 @@ nav.active { transform: translateX(0%);
 
 main { 
   margin-top: 80px;
-       height: 3500px;
        display: flex;
        flex-direction: column;
        align-items: center;
@@ -236,21 +235,23 @@ h2,h3 { color: white;}
 #private-tutor { padding: 10px;
   height: 340px;
   width: 100%; 
-  
  background: linear-gradient(360deg, purple, coral);
-  border-radius: 15px;}
+  border-radius: 15px;
+  transition: 0.5s ease;}
   
-#private-tutor:hover { transform: scale(1.05);
-   box-shadow: 0 0 15px purple;}
+#private-tutor:hover { transform: translateY(-5%);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+   }
 
 #group-Lesson {height: 300px;
   width: 100%; 
   padding: 10px;
   background: linear-gradient(360deg, purple, coral);
-  border-radius: 15px;} 
+  border-radius: 15px;
+ transition: 0.5s ease;} 
   
-#group-Lesson:hover { transform: scale(1.05);
-               box-shadow: 0 0 15px purple;}
+#group-Lesson:hover {transform: translateY(-5%);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);}
 
 #online-subject {height: 300px;
   width: 100%; 
@@ -258,10 +259,10 @@ h2,h3 { color: white;}
   border-radius: 15px;
   padding: 10px;
   border-radius: 15px;
+  transition: 0.5s ease;
 }
-#online-subject:hover { 
-               transform: scale(1.05);
-               box-shadow: 0 0 15px purple;}
+#online-subject:hover { transform: translateY(-5%);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);}
 
 
 i { padding: 10px;}
@@ -281,18 +282,21 @@ i { padding: 10px;}
   height: 320px;
   width: 100%; 
  background: linear-gradient(360deg, purple, coral);
-  border-radius: 15px;}
-#exam:hover {transform: scale(1.05);
-               box-shadow: 0 0 15px purple;}
+  border-radius: 15px;
+  transition: 0.5s ease;}
+
+#exam:hover {transform: translateY(-5%);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);}
 
 #Student_Support { padding: 10px;
   height: 290px;
   width: 100%; 
    background: linear-gradient(360deg, purple, coral);
-  border-radius: 15px;}
-#Student_Support:hover {
-  transform: scale(1.05);
-               box-shadow: 0 0 15px purple;}
+  border-radius: 15px;
+  transition: 0.5s ease;}
+
+#Student_Support:hover{transform: translateY(-5%);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);}
 
 /*--------About-section --------*/
 
@@ -383,5 +387,49 @@ i { padding: 10px;}
 
 .h3 { color: black;}
 .why { color: black;}
+
+
+/*------------how ut works----------*/
+
+.cards-how-section { background: #2A2F4F;
+   color: #FFFFFF;
+       width: 90%;
+       border-radius: 10px;
+       padding: 10px;
+       transition: 0.9s ease;}
+.cards-how-section:hover { transform: translateY(-3%);
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);}
+       
+.section-how { width: 100%;
+               display: flex;
+               flex-direction: column;
+               align-items: center;}
+
+.number1 {background: linear-gradient(360deg, purple, coral);
+        
+          height: 45px;
+          width: 45px; 
+          border-radius: 50%;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+          font-weight: bold;}
+          
+.container-number { display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: 100%;}
+
+.step {padding: 24px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);}
+
+
+
+  
+  
+
+                    
                     
                     
